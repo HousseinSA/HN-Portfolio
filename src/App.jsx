@@ -1,26 +1,32 @@
-import Header from "./Components/Header"
-import "../src/style.css"
-import Main from "./Components/Main"
-import About from "./Components/About"
-import Projects from "./Components/Projects"
-import Footer from "./Components/Footer"
-import Contact from "./Components/Contact"
-import {AnimatePresence} from "framer-motion"
+import {Header, Footer, OpeningAnimation, SideNav} from "./Components"
+import {AllRoutes} from "./routes/AllRoutes"
+import {motion} from "framer-motion"
+import {useLocation} from "react-router-dom"
 export default function App() {
-  function toggle() {
-    const nav = document.querySelector(".navbar")
-    nav.classList.toggle("show")
+  const animation = {
+    hidden: {opacity: 0, y: -100},
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {duration: 1, delay: 1.2, type: "spring", ease: "linear"},
+    },
   }
+  const {pathname} = useLocation()
   return (
-    <div className="container">
-      <Header toggle={toggle} />
-      <AnimatePresence key={"animate"} mode="wait">
-        <Main />
-        <About />
-        <Projects />
-        <Contact />
-      </AnimatePresence>
-      <Footer />
+    <div className="relative">
+      <OpeningAnimation />
+      <div className="APP">
+        <Header />
+        <motion.div
+          className="relative"
+          variants={animation}
+          initial={"hidden"}
+          animate={"show"}>
+          {pathname === "/" ? <SideNav /> : <SideNav path={true} />}
+          <AllRoutes />
+        </motion.div>
+        <Footer />
+      </div>
     </div>
   )
 }
