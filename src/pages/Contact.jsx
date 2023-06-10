@@ -5,7 +5,7 @@ export const Contact = () => {
   return (
     <Animate>
       <main>
-        <div className="flex gap-2 mx-4 justify-between flex main-section ">
+        <div className=" gap-2 mx-4 justify-between flex main-section ">
           <div className="place-self-center">
             <HeaderAnimate>
               <h1 className=" nav_link text-6xl md:text-7xl lg:text-8xl">
