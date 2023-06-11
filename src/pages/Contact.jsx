@@ -12,7 +12,7 @@ export const Contact = () => {
                 Connect
               </h1>
             </HeaderAnimate>
-            <div className="max-w-md my-2">
+            <div className="max-w-md my-2 text-sm md:text-base">
               <p>
                 Connect with me when there is work need need to be done or have
                 i job offer here here are the links.

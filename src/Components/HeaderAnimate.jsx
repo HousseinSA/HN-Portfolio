@@ -16,9 +16,8 @@ export const ImageAnimate = ({children}) => {
     hidden: {scale: 0, rotate: 0},
     show: {
       scale: 1,
-      rotate: 35,
-      opacity: 0.5,
-      transition: {duration: 0.6, delay: 0.3, type: "spring", ease: "linear"},
+      rotate: 10,
+      transition: {duration: 1, delay: 0.3, type: "spring", ease: "linear"},
     },
   }
   return (
@@ -26,6 +25,8 @@ export const ImageAnimate = ({children}) => {
       variants={imageAnimation}
       initial={"hidden"}
       whileInView={"show"}
+      whileHover={{scale:1.2, rotate:0}}
+      whileTap={{scale:1}}
       viewport={{once: false, amount: 0.5}}>
       {children}
     </motion.div>
