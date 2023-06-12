@@ -58,7 +58,7 @@ export const Work = () => {
               </div>
               <ImageAnimate>
                 <Link to={"https://cina-info.netlify.app"} target="_blank">
-                  <div className=" max-w-xs lg:max-w-md">
+                  <div className=" shadow-lg max-w-xs lg:max-w-md">
                     <img src={cinaInfo} alt="cina-info" />
                   </div>
                 </Link>
@@ -84,7 +84,7 @@ export const Work = () => {
               </div>
               <ImageAnimate>
                 <Link to={"https://ebook-shop.netlify.app"} target="_blank">
-                  <div className="max-w-xs lg:max-w-md">
+                  <div className=" shadow-lg max-w-xs lg:max-w-md">
                     <img src={ebbokStore} alt="ebookStore" />
                   </div>
                 </Link>
@@ -111,7 +111,7 @@ export const Work = () => {
               </div>
               <ImageAnimate>
                 <Link to={"https://docs-editor.netlify.app"} target="_blank">
-                  <div className="max-w-xs lg:max-w-md">
+                  <div className="shadow-lg max-w-xs lg:max-w-md">
                     <img src={googleDocs} alt="docs" />
                   </div>
                 </Link>
@@ -141,7 +141,7 @@ export const Work = () => {
                 <Link
                   to={"https://budget-register.netlify.app"}
                   target="_blank">
-                  <div className="max-w-xs lg:max-w-md">
+                  <div className="shadow-lg max-w-xs lg:max-w-md">
                     <img src={budgetRegister} alt="budget register" />
                   </div>
                 </Link>
@@ -165,7 +165,7 @@ export const Work = () => {
               </div>
               <ImageAnimate>
                 <Link to={"https://postcreater.netlify.app"} target="_blank">
-                  <div className="max-w-xs lg:max-w-md">
+                  <div className="shadow-lg max-w-xs lg:max-w-md">
                     <img src={postCreater} alt="post creater" />
                   </div>
                 </Link>

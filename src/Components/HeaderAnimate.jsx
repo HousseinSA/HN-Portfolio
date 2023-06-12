@@ -16,7 +16,7 @@ export const ImageAnimate = ({children}) => {
     hidden: {scale: 0, rotate: 0},
     show: {
       scale: 1,
-      rotate: 10,
+      rotate: 5,
       transition: {duration: 1, delay: 0.3, type: "spring", ease: "linear"},
     },
   }

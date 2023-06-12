@@ -38,18 +38,33 @@ export const Home = () => {
               <span className="my-2">Web Developer</span>
               <p>Passionate creater and problem solver.</p>
             </div>
-            <div className="flex justify-center md:justify-start gap-2 my-4 items-center">
-              <Link>
-                <Github size={20} className="cursor-pointer" />
-              </Link>
-              <Link>
-                <Twitter size={20} className="cursor-pointer " />
-              </Link>
-              <Link>
-                <Linkedin size={20} className=" cursor-pointer " />
-              </Link>
-              <Link>
-                <Instagram size={20} className=" cursor-pointer " />
+            <div className="flex gap-2 items-center justify-between">
+              <div className="flex justify-center md:justify-start gap-2 my-4 items-center">
+                <Link to={"https://github.com/housseinsa"} target="_blank">
+                  <Github size={20} className="cursor-pointer" />
+                </Link>
+                <Link to={"https://github.com/housseinsa"} target="_blank">
+                  <Twitter size={20} className="cursor-pointer " />
+                </Link>
+                <Link
+                  to={"https://www.linkedin.com/in/husseinsa/"}
+                  target="_blank">
+                  <Linkedin size={20} className=" cursor-pointer " />
+                </Link>
+                <Link
+                  to={"https://www.instagram.com/houssein_11"}
+                  target="_blank">
+                  <Instagram size={20} className=" cursor-pointer " />
+                </Link>
+              </div>
+              <Link
+              target="_blank"
+                to={
+                  "https://docs.google.com/document/d/1ajHWISP-M0g0OPCKPrDiPnNf-0bTZCtm1I-qWIZ-pic/edit" 
+                }>
+                <div className="bg-mainColor cursor-pointer px-4 py-3 hover:bg-green-700 h-fit text-white  rounded">
+                  View My CV
+                </div>
               </Link>
             </div>
           </div>

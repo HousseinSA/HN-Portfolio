@@ -7,12 +7,18 @@ export const SideNav = ({path}) => {
       }  w-20 h-screen text-sm flex-col items-center  flex
   `}>
       <div className="hover:line-through -rotate-90 spacing ">
-        {!path && <Link to={"https://github.com/housseinsa"} target="_blank">GH</Link>}
+        {!path && (
+          <Link to={"https://github.com/housseinsa"} target="_blank">
+            GH
+          </Link>
+        )}
         {path && <Link to={"/"}>HOME</Link>}
       </div>
       {!path && (
         <div className="hover:line-through -rotate-90 spacing">
-          <Link to={""}>LDN</Link>
+          <Link to={"https://www.linkedin.com/in/husseinsa/"} target="_blank">
+            LDN
+          </Link>
         </div>
       )}
       <div className="w-0.5 h-1/2 bg-slate-800 rotate-180"></div>
