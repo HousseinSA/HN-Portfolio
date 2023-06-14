@@ -38,8 +38,8 @@ export const Home = () => {
               <span className="my-2">Web Developer</span>
               <p>Passionate creater and problem solver.</p>
             </div>
-            <div className="flex gap-2 items-center justify-between">
-              <div className="flex justify-center md:justify-start gap-2 my-4 items-center">
+            <div className="flex gap-2 items-center  justify-between">
+              <div className="flex justify-center items-center md:justify-start gap-2 my-4 items-center">
                 <Link to={"https://github.com/housseinsa"} target="_blank">
                   <Github size={20} className="cursor-pointer" />
                 </Link>
