@@ -43,7 +43,7 @@ export const About = () => {
   return (
     <Animate>
       <main>
-        <div className="flex gap-2 justify-center flex-wrap lg:flex-nowrap main-section items-center ">
+        <div className="flex gap-2 justify-center flex-wrap lg:flex-nowrap min-h-H75 items-center ">
           <div className="text-md max-w-md md:max-w-xl p-3 ">
             <HeaderAnimate>
               <h1 className="nav_link text-6xl md:text-7xl lg:text-8xl">

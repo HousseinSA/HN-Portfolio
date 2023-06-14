@@ -13,20 +13,18 @@ export default function App() {
   }
   const {pathname} = useLocation()
   return (
-    <div className="relative">
+    <div className="APP">
       <OpeningAnimation />
-      <div className="APP">
-        <Header />
-        <motion.div
-          className="relative"
-          variants={animation}
-          initial={"hidden"}
-          animate={"show"}>
-          {pathname === "/" ? <SideNav /> : <SideNav path={true} />}
-          <AllRoutes />
-        </motion.div>
-        <Footer />
-      </div>
+      <Header />
+      <motion.div
+        className="relative"
+        variants={animation}
+        initial={"hidden"}
+        animate={"show"}>
+        {pathname === "/" ? <SideNav /> : <SideNav path={true} />}
+        <AllRoutes />
+      </motion.div>
+      <Footer />
     </div>
   )
 }

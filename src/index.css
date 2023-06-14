@@ -31,18 +31,13 @@ main {
   padding: 2rem 0;
   max-width: 90%;
   margin: auto;
-  min-height: 80vh;
+  /* min-height: 80vh; */
 }
-
 .main-info {
   font-family: "Playfair", serif;
 }
-
 .spacing {
   letter-spacing: 5px;
-}
-.main-section {
-  min-height: 80vh;
 }
 .notFound,
 .title,

@@ -22,7 +22,7 @@ export const Home = () => {
   return (
     <Animate>
       <main>
-        <div className="flex relative justify-center items-center gap-2 main-section md:justify-around ">
+        <div className="flex justify-center items-center gap-2 min-h-H75 md:justify-around ">
           <div className=" lg:place-self-end">
             <div className="main-info ">
               <h1 className="text-5xl lg:text-6xl">
@@ -58,12 +58,12 @@ export const Home = () => {
                 </Link>
               </div>
               <Link
-              target="_blank"
+                target="_blank"
                 to={
-                  "https://docs.google.com/document/d/1ajHWISP-M0g0OPCKPrDiPnNf-0bTZCtm1I-qWIZ-pic/edit" 
+                  "https://drive.google.com/file/d/1sJfKDa2iqnb-RhQ65koey4w2sb9HbFYj/view"
                 }>
-                <div className="bg-mainColor cursor-pointer px-4 py-3 hover:bg-green-700 h-fit text-white  rounded">
-                  View My CV
+                <div className="bg-mainColor cursor-pointer px-4 py-3 hover:bg-hoverColor h-fit text-white  rounded">
+                  Resume
                 </div>
               </Link>
             </div>

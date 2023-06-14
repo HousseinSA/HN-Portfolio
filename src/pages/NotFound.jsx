@@ -4,7 +4,7 @@ export const NotFound = () => {
   return (
     <Animate>
       <main>
-        <div className="flex gap-2 mx-4 justify-between flex main-section ">
+        <div className=" gap-2 mx-4 justify-between flex min-h-H75 ">
           <div className="place-self-center">
             <HeaderAnimate>
               <h1 className="notFound text-7xl lg:text-9xl ">404.</h1>

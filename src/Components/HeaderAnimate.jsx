@@ -25,8 +25,8 @@ export const ImageAnimate = ({children}) => {
       variants={imageAnimation}
       initial={"hidden"}
       whileInView={"show"}
-      whileHover={{scale:1.2, rotate:0}}
-      whileTap={{scale:1}}
+      whileHover={{scale: 1.2, rotate: 0}}
+      whileTap={{scale: 1}}
       viewport={{once: false, amount: 0.5}}>
       {children}
     </motion.div>

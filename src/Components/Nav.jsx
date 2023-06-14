@@ -13,10 +13,10 @@ export const Nav = () => {
           <Link to={"/work"}>Work</Link>
         </motion.div>
         <motion.div whileHover={hoverAnimate}>
-          <Link to={"/about"}> About</Link>
+          <Link to={"/about"}>About</Link>
         </motion.div>
         <motion.div whileHover={hoverAnimate}>
-          <Link to={"/Contact"}>Contact</Link>
+          <Link to={"/Contact"}>Connect</Link>
         </motion.div>
       </div>
     </nav>
