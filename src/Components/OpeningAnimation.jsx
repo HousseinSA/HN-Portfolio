@@ -4,13 +4,12 @@ import {motion} from "framer-motion"
 
 export const OpeningAnimation = () => {
   const [onAnimationEnds, setOneAnimationEnds] = useState(false)
-
   const animation = {
-    hidden: {y: 0, scale:1},
+    hidden: {y: 0, scale: 1},
     show: {
-      zIndex:20,
+      zIndex: 20,
       y: 2000,
-      scale:1.4,
+      scale: 1.4,
       transition: {duration: 0.5, delay: 1, ease: "linear"},
     },
   }
