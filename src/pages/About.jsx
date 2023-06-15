@@ -16,6 +16,20 @@ export const About = () => {
       },
     },
   }
+  const containerIcon = {
+    hidden: {scale: 0.4},
+    show: {
+      scale: 1,
+      transition: {
+        repeat: "Infinity",
+        repeatDelay: 1.5,
+        duration: 5,
+        repeatType: "reverse",
+        ease: "easeInOut",
+      },
+    },
+  }
+
   const iconsAnimation = {
     hidden: {opacity: 0, scale: 0},
     show: {
@@ -24,19 +38,6 @@ export const About = () => {
       transition: {
         duration: 0.6,
         ease: "easeOut",
-      },
-    },
-  }
-
-  const containerIcon = {
-    hidden: {scale: 0.4},
-    show: {
-      scale: 1,
-      transition: {
-        repeat: "Infinity",
-        staggerChildren: 0.3,
-        duration: 5,
-        repeatDelay: 1.5,
       },
     },
   }

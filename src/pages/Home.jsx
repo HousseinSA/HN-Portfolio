@@ -19,6 +19,21 @@ export const Home = () => {
       },
     },
   }
+  const homeLogo = {
+    hidden: {scale:0, opacity:0, rotate: 25},
+    show: {
+      opacity:.3, 
+
+      scale: 1.2,
+      transition: {
+        repeat: "Infinity",
+        repeatType: "reverse",
+        duration: 2,
+        repeatDelay: 2,
+        ease: "easeOut",
+      },
+    },
+  }
   return (
     <Animate>
       <main>
@@ -39,7 +54,7 @@ export const Home = () => {
               <p>Passionate creater and problem solver.</p>
             </div>
             <div className="flex gap-2 items-center  justify-between">
-              <div className="flex justify-center items-center md:justify-start gap-2 my-4 items-center">
+              <div className="flex justify-center md:justify-start gap-2 my-4 items-center">
                 <Link to={"https://github.com/housseinsa"} target="_blank">
                   <Github size={20} className="cursor-pointer" />
                 </Link>
@@ -68,12 +83,13 @@ export const Home = () => {
               </Link>
             </div>
           </div>
-          <div
-            animate={"show"}
+          <motion.div
+            variants={homeLogo}
             initial="hidden"
-            className="absolute md:hidden w-34 rotate-45 visible -z-10">
+            animate="show"
+            className="absolute md:hidden max-w-xs rotate-45 visible -z-10">
             <img src={Logo} alt="logo" />
-          </div>
+          </motion.div>
           <Nav />
         </div>
       </main>

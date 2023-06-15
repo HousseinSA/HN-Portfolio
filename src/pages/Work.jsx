@@ -1,15 +1,13 @@
-import {useEffect} from "react"
 import {Animate} from "../Animate/Animate"
 import {HeaderAnimate, ImageAnimate} from "../Components"
 import {motion} from "framer-motion"
-import {Link, useLocation} from "react-router-dom"
+import {Link} from "react-router-dom"
 import budgetRegister from "../assests/budget-register.png"
 import cinaInfo from "../assests/cina-info.png"
 import ebbokStore from "../assests/ebook-sotre.png"
 import googleDocs from "../assests/google-docs-clone.png"
 import postCreater from "../assests/postCreater.png"
 export const Work = () => {
-  const location = useLocation()
   const animation = {
     hidden: {opacity: 0, x: -100},
     show: {
@@ -18,10 +16,6 @@ export const Work = () => {
       transition: {duration: 1, ease: "linear", type: "spring", bounce: 0.2},
     },
   }
-  useEffect(() => {
-    window.scrollTo(0, 0) // Scroll to top on page reload
-  }, [location])
-
   return (
     <Animate>
       <main>
