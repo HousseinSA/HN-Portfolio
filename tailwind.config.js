@@ -9,7 +9,7 @@ module.exports = {
         bodyColor: "#ece7e1",
       },
       minHeight: {
-        H75: "75dvh",
+        H75: "75vh",
       },
     },
   },
