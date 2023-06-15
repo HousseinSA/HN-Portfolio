@@ -11,21 +11,21 @@ export const About = () => {
         delay: 1.8,
         duration: 0.8,
         type: "spring",
-        ease: "linear",
+        ease: "easeOut",
         bounce: 0.3,
       },
     },
   }
   const containerIcon = {
-    hidden: {scale: 0.4},
+    hidden: {opacity:1},
     show: {
-      scale: 1,
       transition: {
         repeat: "Infinity",
         repeatDelay: 1.5,
         duration: 5,
-        repeatType: "reverse",
+        repeatType: "mirror",
         ease: "easeInOut",
+        staggerChildren: 0.5,
       },
     },
   }
@@ -36,7 +36,9 @@ export const About = () => {
       opacity: 1,
       scale: 1,
       transition: {
-        duration: 0.6,
+        repeat: "Infinity",
+        repeatType: "mirror",
+        duration: 1,
         ease: "easeOut",
       },
     },

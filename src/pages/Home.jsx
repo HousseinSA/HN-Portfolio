@@ -20,11 +20,10 @@ export const Home = () => {
     },
   }
   const homeLogo = {
-    hidden: {scale:0, opacity:0, rotate: 25},
+    hidden: {scale: 0, opacity: 0, rotate: 45},
     show: {
-      opacity:.3, 
-
-      scale: 1.2,
+      opacity: 0.1,
+      scale: .8,
       transition: {
         repeat: "Infinity",
         repeatType: "reverse",
@@ -87,7 +86,7 @@ export const Home = () => {
             variants={homeLogo}
             initial="hidden"
             animate="show"
-            className="absolute md:hidden max-w-xs rotate-45 visible -z-10">
+            className="absolute md:hidden max-w-xs visible -z-10">
             <img src={Logo} alt="logo" />
           </motion.div>
           <Nav />
