@@ -3,7 +3,7 @@ import Logo from "../assests/hs-low-resolution-logo-color-on-transparent-backgro
 import {useState} from "react"
 export const Header = () => {
   const [open, setOpen] = useState(false)
-  const handelTogle = () => {
+  const handelToggle = () => {
     setOpen(!open)
   }
   return (
@@ -18,7 +18,7 @@ export const Header = () => {
             type="button"
             className=" md:hidden inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 "
             aria-controls="navbar-hamburger"
-            onClick={handelTogle}
+            onClick={handelToggle}
             aria-expanded="false">
             <span className="sr-only">Open main menu</span>
             <svg
@@ -39,28 +39,28 @@ export const Header = () => {
             open ? "" : "hidden"
           } m-4  w-full" id="navbar-hamburger`}>
           <ul className="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 ">
-            <li onClick={handelTogle}>
+            <li onClick={handelToggle}>
               <Link
                 to="/"
                 className="block py-2 pl-3 text-gray-900 pr-4 rounded hover:bg-gray-700 hover:text-white  ">
                 Home
               </Link>
             </li>
-            <li onClick={handelTogle}>
+            <li onClick={handelToggle}>
               <Link
                 to="/about"
                 className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-700  hover:text-white">
                 About
               </Link>
             </li>
-            <li onClick={handelTogle}>
+            <li onClick={handelToggle}>
               <Link
                 to="/work"
                 className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-700 hover:text-white ">
                 Work
               </Link>
             </li>
-            <li onClick={handelTogle}>
+            <li onClick={handelToggle}>
               <Link
                 to="/contact"
                 className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-700 hover:text-white">

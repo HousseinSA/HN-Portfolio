@@ -3,17 +3,6 @@ import {HeaderAnimate} from "../Components"
 import {motion} from "framer-motion"
 import userImage from "../assests/IMG_20230225_231859.jpg"
 export const About = () => {
-  const iconsAnimation = {
-    hidden: {opacity: 0},
-    show: {
-      opacity: 1,
-      transition: {
-        repeatDelay: 9,
-        type: "spring",
-        repeat: Infinity,
-      },
-    },
-  }
   const userImageAnimate = {
     hidden: {scale: 0},
     show: {
@@ -27,19 +16,31 @@ export const About = () => {
       },
     },
   }
-  const containerIcon = {
-    hidden: {opacity: 0},
+  const iconsAnimation = {
+    hidden: {opacity: 0, scale: 0},
     show: {
       opacity: 1,
+      scale: 1,
       transition: {
-        ease: "linear",
-        repeat: Infinity,
-        repeatDelay: 10,
-        duration: 9,
-        staggerChildren: 1,
+        duration: 0.6,
+        ease: "easeOut",
       },
     },
   }
+
+  const containerIcon = {
+    hidden: {scale: 0.4},
+    show: {
+      scale: 1,
+      transition: {
+        repeat: "Infinity",
+        staggerChildren: 0.3,
+        duration: 5,
+        repeatDelay: 1.5,
+      },
+    },
+  }
+
   return (
     <Animate>
       <main>
@@ -75,53 +76,68 @@ export const About = () => {
         </div>
         <motion.div
           variants={containerIcon}
-          animate="show"
           initial="hidden"
+          animate="show"
           className="flex justify-center flex-wrap gap-2 items-center">
-          <div
-            variants={iconsAnimation}
-            className=" w-14 h-14 flex items-center justify-center rounded-full bg-yellow-200">
-            <i className="devicon-javascript-plain colored text-white text-2xl"></i>
-          </div>
           <motion.div
             variants={iconsAnimation}
-            className=" w-14 h-14 flex items-center  justify-center rounded-full bg-red-300">
-            <i className="devicon-html5-plain colored text-white text-2xl"></i>
+            className=" w-16 h-16 flex items-center justify-center rounded-full bg-yellow-200">
+            <i className="devicon-javascript-plain colored text-white text-4xl"></i>
           </motion.div>
           <motion.div
             variants={iconsAnimation}
-            className="  w-14 h-14 flex items-center  justify-center rounded-full bg-blue-300">
-            <i className="devicon-css3-plain colored text-white text-2xl"></i>
+            className=" w-16 h-16 flex items-center  justify-center rounded-full bg-red-300">
+            <i className="devicon-html5-plain colored text-white text-4xl"></i>
           </motion.div>
           <motion.div
             variants={iconsAnimation}
-            className="  w-14 h-14 flex items-center justify-center rounded-full bg-green-200">
-            <i className="devicon-react-plain colored text-white text-2xl"></i>
+            className="  w-16 h-16 flex items-center  justify-center rounded-full bg-blue-300">
+            <i className="devicon-css3-plain colored text-white text-4xl"></i>
           </motion.div>
           <motion.div
             variants={iconsAnimation}
-            className=" w-14 h-14 flex items-center  justify-center rounded-full bg-purple-300">
-            <i className="devicon-sass-plain colored text-white text-2xl"></i>
+            className="  w-16 h-16 flex items-center justify-center rounded-full bg-green-200">
+            <i className="devicon-react-plain colored text-white text-4xl"></i>
           </motion.div>
           <motion.div
             variants={iconsAnimation}
-            className=" w-14 h-14 flex items-center   justify-center rounded-full bg-indigo-300">
-            <i className="devicon-redux-plain colored text-white text-2xl"></i>
+            className=" w-16 h-16 flex items-center  justify-center rounded-full bg-purple-300">
+            <i className="devicon-sass-plain colored text-white text-4xl"></i>
           </motion.div>
           <motion.div
             variants={iconsAnimation}
-            className="  w-14 h-14 flex items-center  justify-center rounded-full bg-pink-300">
-            <i className="devicon-mongodb-plain colored text-white text-2xl"></i>
+            className=" w-16 h-16 flex items-center   justify-center rounded-full bg-indigo-300">
+            <i className="devicon-redux-plain colored text-white text-4xl"></i>
           </motion.div>
           <motion.div
             variants={iconsAnimation}
-            className="  w-14 h-14 flex items-center  justify-center rounded-full bg-yellow-300">
-            <i className="devicon-express-original-wordmark text-white text-2xl"></i>
+            className="  w-16 h-16 flex items-center  justify-center rounded-full bg-pink-300">
+            <i className="devicon-mongodb-plain colored text-white text-4xl"></i>
           </motion.div>
           <motion.div
             variants={iconsAnimation}
-            className=" w-14 h-14 flex items-center  justify-center rounded-full bg-blue-300">
-            <i className="devicon-python-plain colored text-white text-2xl"></i>
+            className="  w-16 h-16 flex items-center  justify-center rounded-full bg-yellow-300">
+            <i className="devicon-express-original-wordmark text-white text-4xl"></i>
+          </motion.div>
+          <motion.div
+            variants={iconsAnimation}
+            className=" w-16 h-16 flex items-center  justify-center rounded-full bg-blue-300">
+            <i className="devicon-python-plain colored text-white text-4xl"></i>
+          </motion.div>
+          <motion.div
+            variants={iconsAnimation}
+            className=" w-16 h-16 flex items-center  justify-center rounded-full bg-green-300">
+            <i className="devicon-tailwindcss-plain colored text-4xl"></i>
+          </motion.div>
+          <motion.div
+            variants={iconsAnimation}
+            className=" w-16 h-16 flex items-center  justify-center rounded-full bg-orange-300">
+            <i className="devicon-git-plain colored text-4xl"></i>
+          </motion.div>
+          <motion.div
+            variants={iconsAnimation}
+            className=" w-16 h-16 flex items-center  justify-center rounded-full bg-yellow-200">
+            <i className="devicon-firebase-plain-wordmark colored text-4xl"></i>
           </motion.div>
         </motion.div>
       </main>

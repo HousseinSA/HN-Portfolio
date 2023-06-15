@@ -5,12 +5,16 @@ import {motion} from "framer-motion"
 export const OpeningAnimation = () => {
   const [onAnimationEnds, setOneAnimationEnds] = useState(false)
   const animation = {
-    hidden: {y: 0, scale: 1},
+    hidden: {scaleY: 1},
     show: {
-      zIndex: 20,
-      y: 2000,
-      scale: 1.4,
-      transition: {duration: 0.5, delay: 1, ease: "linear"},
+      zIndex: 1000,
+      y: 0,
+      scaleY: 0,
+      transition: {
+        duration: 0.5,
+        delay: 1,
+        ease: "easeInOut",
+      },
     },
   }
 
@@ -29,10 +33,15 @@ export const OpeningAnimation = () => {
           <div className="flex flex-col gap-4 justify-center items-center">
             <motion.img
               src={img}
-              initial={{y: 10}}
-              animate={{y: 0, transition: {type: "spring"}}}
+              initial={{y: 100, opacity: 0}}
+              animate={{
+                rotate: 5,
+                y: 0,
+                opacity: 1,
+                transition: {type: "spring", duration: 0.5, bounce: 0.2},
+              }}
               alt="Logo"
-              className="max-w-xs w-1/2"
+              className="max-w-xs  w-60"
             />
             <div>
               <h1 className="text-4xl title text-center text-white font-semibold">
