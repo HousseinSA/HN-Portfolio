@@ -6,7 +6,7 @@ import budgetRegister from "../assests/budget-register.png"
 import cinaInfo from "../assests/cina-info.png"
 import ebbokStore from "../assests/ebook-sotre.png"
 import googleDocs from "../assests/google-docs-clone.png"
-import postCreater from "../assests/postCreater.png"
+import weatherViewer from "../assests/weather-viewer.png"
 export const Work = () => {
   const animation = {
     hidden: {opacity: 0, x: -100},
@@ -154,18 +154,20 @@ export const Work = () => {
               className="flex justify-center flex-wrap md:flex-nowrap md:justify-between gap-14 lg:gap-0 items-center">
               <div>
                 <h2 className="text-2xl lg:text-3xl font-semibold">
-                  Post-creater
+                  Weather-viewer
                 </h2>
                 <p className="my-3 max-w-md text-sm md:text-base">
-                  Post Creator is a React app utilizing Firebase as the database
-                  and Google account authentication for creating and managing
-                  posts.
+                  The weather viewer app is a React web application styled with
+                  Tailwind CSS. It uses the WeatherAPI to fetch and display
+                  current weather data for a user-specified city. The app
+                  includes input fields for the city name, buttons for
+                  additional functionality,
                 </p>
               </div>
               <ImageAnimate>
-                <Link to={"https://postcreater.netlify.app"} target="_blank">
+                <Link to={"https://theweather101.netlify.app"} target="_blank">
                   <div className="shadow-lg max-w-xs lg:max-w-md">
-                    <img src={postCreater} alt="post creater" />
+                    <img src={weatherViewer} alt="weather viewer" />
                   </div>
                 </Link>
               </ImageAnimate>
