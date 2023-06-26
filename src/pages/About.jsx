@@ -17,7 +17,7 @@ export const About = () => {
     },
   }
   const containerIcon = {
-    hidden: {opacity:1},
+    hidden: {opacity: 1},
     show: {
       transition: {
         repeat: "Infinity",
@@ -25,7 +25,7 @@ export const About = () => {
         duration: 5,
         repeatType: "mirror",
         ease: "easeInOut",
-        staggerChildren: 0.5,
+        staggerChildren: .8,
       },
     },
   }
@@ -38,8 +38,8 @@ export const About = () => {
       transition: {
         repeat: "Infinity",
         repeatType: "mirror",
-        duration: 1,
-        ease: "easeOut",
+        duration: .8,
+        ease: "linear",
       },
     },
   }
@@ -141,6 +141,11 @@ export const About = () => {
             variants={iconsAnimation}
             className=" w-16 h-16 flex items-center  justify-center rounded-full bg-yellow-200">
             <i className="devicon-firebase-plain-wordmark colored text-4xl"></i>
+          </motion.div>
+          <motion.div
+            variants={iconsAnimation}
+            className=" w-16 h-16 flex items-center  justify-center rounded-full bg-blue-200">
+            <i class="devicon-nextjs-original-wordmark colored text-4xl"></i>
           </motion.div>
         </motion.div>
       </main>
